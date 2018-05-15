@@ -1,11 +1,19 @@
 page-home {
     
     #topButtons{
-        display: flex;
-        flex-direction: row;
+        //display: flex;
+        //flex-direction: row;
+        margin-top: 15%;
+        text-align: center;
     }
 
     #topButtons button {
         flex: 1;
+    }
+    .btn{
+        margin-top:10%;
+    }
+    .registro{
+        margin-top:1em;
     }
 }

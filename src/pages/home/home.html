@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Social Network
+      Aplicacion Ines-Adrian
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,12 +9,16 @@
 <ion-content padding>
 
   <div id="topButtons">
-    <button ion-button (click)="signIn()" item-left>
-      Sign In
-    </button>
-    <button ion-button (click)="register()" item-left>
-      Register
-    </button>
+    <h4>Bienvenido</h4>
+    <p>Esta es la aplicacion de prueba de git.</p>
+    <div class="btn">
+      <button block ion-button (click)="signIn()">
+        Sign In
+      </button>
+      <button block ion-button class="registro" (click)="register()">
+        Register
+      </button>
+    </div>
   </div>
 
 </ion-content>
