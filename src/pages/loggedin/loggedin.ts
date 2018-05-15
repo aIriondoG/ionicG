@@ -4,14 +4,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { IncidenciasPage } from '../incidencias/incidencias';
 import { PlayasPage } from '../playas/playas';
 
-
-/**
- * Generated class for the LoggedinPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-loggedin',
@@ -20,19 +12,19 @@ import { PlayasPage } from '../playas/playas';
 export class LoggedinPage {
 
   email: string;
-  constructor(public navCtrl: NavController, 
+  constructor(public navCtrl: NavController,
     public navParams: NavParams,
-  private fire: AngularFireAuth) {
+    private fire: AngularFireAuth) {
     this.email = fire.auth.currentUser.email;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoggedinPage');
   }
-  incidencias(){
+  incidencias() {
     this.navCtrl.push(IncidenciasPage);
   }
-  playas(){
+  playas() {
     this.navCtrl.push(PlayasPage);
   }
 
