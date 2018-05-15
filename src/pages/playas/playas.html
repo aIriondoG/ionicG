@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Participantes mundial femenino 2015</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngFor="let e of equipos" >
+    <ion-item class="paises" no-lines>
+      <img src="../../assets/imgs/Banderas/{{e.country}}.png" alt="Imagen del equipo" width="30" height="15"> {{e.country}} ({{e.fifa_code}})
+    </ion-item>
+
+  </div>
+</ion-content>
