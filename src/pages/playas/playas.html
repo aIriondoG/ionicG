@@ -4,12 +4,13 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="main">
+  <div class="cCont">
+    <div *ngFor="let e of equipos" class="cont">
+      <ion-item class="paises" no-lines>
+        <img src="../../assets/imgs/Banderas/{{e.country}}.png" alt="Imagen del equipo" width="30" height="15"> {{e.country}} ({{e.fifa_code}})
+      </ion-item>
 
-  <div *ngFor="let e of equipos" >
-    <ion-item class="paises" no-lines>
-      <img src="../../assets/imgs/Banderas/{{e.country}}.png" alt="Imagen del equipo" width="30" height="15"> {{e.country}} ({{e.fifa_code}})
-    </ion-item>
-
+    </div>
   </div>
 </ion-content>
