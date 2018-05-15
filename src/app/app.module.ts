@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginPage } from '../pages/login/login';
 import { LoggedinPage } from '../pages/loggedin/loggedin';
 import { RegisterPage } from './../pages/register/register';
+import { IncidenciasPage } from '../pages/incidencias/incidencias';
 
 const firebaseAuth = {
   apiKey: "AIzaSyDecPLTcBODdn8fU9hUd9VFymsBZjSFaqk",
@@ -32,7 +33,8 @@ const firebaseAuth = {
     PlayasPage,
     LoginPage,
     RegisterPage,
-    LoggedinPage
+    LoggedinPage,
+    IncidenciasPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ const firebaseAuth = {
     PlayasPage,
     LoginPage,
     RegisterPage,
-    LoggedinPage
+    LoggedinPage,
+    IncidenciasPage
   ],
   providers: [
     StatusBar,

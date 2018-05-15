@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { IncidenciasPage } from '../incidencias/incidencias';
+import { PlayasPage } from '../playas/playas';
 
 
 /**
@@ -27,8 +29,11 @@ export class LoggedinPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoggedinPage');
   }
-  tareas(){
-    //this.navCtrl.push(TaskPage);
+  incidencias(){
+    this.navCtrl.push(IncidenciasPage);
+  }
+  playas(){
+    this.navCtrl.push(PlayasPage);
   }
 
 }
